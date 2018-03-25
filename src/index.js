@@ -5,12 +5,12 @@ import { Router, Route, browserHistory } from 'react-router';
 
 // import { Provider } from 'react-redux';
 
-import App from './components/App';
+import Admin from './components/Admin';
 import Mentor from './components/Mentor';
 
 ReactDOM.render(
   <Router path="/" history={browserHistory}>
-    <Route path="/" component={App} />
+    <Route path="/admin" component={Admin} />
     <Route path="/mentor" component={Mentor} />
   </Router>, document.getElementById('root')
 )

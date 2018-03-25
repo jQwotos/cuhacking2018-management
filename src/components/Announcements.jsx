@@ -38,13 +38,11 @@ class Announcements extends Component {
     })
 
     announcementsRef.on('child_removed', snapshot => {
-
-      var index = this.findAnnouncement(snapshot.key);
-      if (index != -1) {
-        this.setState({
-          announcements: this.state.announcements.splice(index, 1)
-        });
-      }
+      this.setState({
+        announcements: this.state.announcements.filter(function(announcement) {
+          return announcement.id !== snapshot.key
+        })
+      });
     })
 
   }

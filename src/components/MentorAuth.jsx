@@ -4,12 +4,14 @@ import { Modal, Navbar, Nav, NavItem, Grid, Row } from 'react-bootstrap';
 import firebase from 'firebase';
 import fire from '../fire';
 
+import Requests from './Requests';
+
 const uiConfig = {
   signInFlow: 'popup',
   signInSuccessUrl: '/mentor',
   signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
   callbacks: {
-    signInSucess: () => false
+    signInSuccess: () => false
   }
 };
 
@@ -60,7 +62,7 @@ class MentorAuth extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-
+        <Requests />
       </div>
     )
   }

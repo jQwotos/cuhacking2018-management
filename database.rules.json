@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "announcements": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2'",
+    },
+    "schedule": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2'",
+    },
+    "mentoring": {
+      ".read": true,
+      ".write": "!newData.exists() || (auth != null && (auth.uuid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2' || auth.uuid === 'IJjBkYmzu1ZYe4uXJjxFzkeZP2x2'))"
+    }
+  }
+}
