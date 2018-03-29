@@ -35,7 +35,7 @@ class Announcements extends Component {
 
   render() {
     return (
-      <Col className="Announcements" sm={12} md={6} id="announcements">
+      <Col className="Announcements column-heading" sm={12} md={6} id="announcements">
         <h2>Announcements</h2>
         <ListGroup>
           {

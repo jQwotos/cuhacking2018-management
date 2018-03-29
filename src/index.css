@@ -15,6 +15,10 @@
   min-height: 1200px;
 }
 
+.hoverable {
+  cursor: pointer;
+}
+
 .hackers-nav {
   background: none;
   background-color: transparent !important;
@@ -31,6 +35,7 @@
 
 .event-item {
   text-align: center;
+  color: white;
 }
 
 .navbar-logo {
@@ -64,6 +69,7 @@
     font-weight: bold;
     margin-bottom: 17px !important;
     text-align: center;
+    color: white;
  }
  /*Ignore this in app*/
  .schedule-col.first{
@@ -74,3 +80,9 @@
        margin-left:-60px !important;
     }
  }
+
+.column-heading > h2 {
+  color: white;
+  border-bottom: solid;
+  border-color: white;
+}

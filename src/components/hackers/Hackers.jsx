@@ -121,7 +121,6 @@ class Hackers extends Component {
         name: this.state.person_name,
         timestamp: Date.now()
       });
-      // this.props.alert.show("Request Submitted");
     }
   }
 
