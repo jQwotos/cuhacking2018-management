@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Grid, Row, Col, ListGroupItem } from 'react-bootstrap';
+import { Navbar, Grid, Row, Col, ListGroupItem, ListGroup } from 'react-bootstrap';
 import { db } from '../../fire';
 
 class Schedule extends Component {
@@ -18,7 +18,7 @@ class Schedule extends Component {
         id: snapshot.key,
         }
         this.setState({
-          schedule: ([event]).concat(this.state.schedule)
+          schedule: (this.state.schedule).concat([event])
         })
       }
     )
@@ -82,16 +82,16 @@ class Schedule extends Component {
             </ul>
           </Col>
           <Col sm={12} md={6}>
-            <ul className="schedule-col">
-              <li className="schedule-head">Sunday April 1st</li>
-              {
-                this.state.schedule.map(event => {
-                  return (
-                    this.renderSun(event)
-                  )
-                })
-              }
-            </ul>
+              <ul className="schedule-col">
+                <li className="schedule-head">Sunday April 1st</li>
+                {
+                  this.state.schedule.map(event => {
+                    return (
+                      this.renderSun(event)
+                    )
+                  })
+                }
+              </ul>
           </Col>
         </Row>
       </Col>
