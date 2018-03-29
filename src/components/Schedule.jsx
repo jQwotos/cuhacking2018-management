@@ -11,6 +11,8 @@ class Schedule extends Component {
       title: "",
       description: "",
       date: "",
+      endTime: "",
+      extra: "",
       schedule: []
     }
   }
@@ -41,7 +43,9 @@ class Schedule extends Component {
     db.ref("schedule").push({
       description: this.state.description,
       date: this.state.date,
-      title: this.state.title
+      endTime: this.state.endTime,
+      title: this.state.title,
+      extra: this.state.extra,
     })
   }
 
@@ -73,10 +77,25 @@ class Schedule extends Component {
             />
         </FormGroup>
         <FormGroup>
-          <ControlLabel>Date and Time</ControlLabel>
+          <ControlLabel>Extra</ControlLabel>
+          <FormControl
+            componentClass="textarea"
+            placeholder="Extra Content, displayed undernearth event"
+            onChange={(event) => this.setState({extra: event.target.value})}
+            />
+        </FormGroup>
+        <FormGroup>
+          <ControlLabel>Date and Time Start</ControlLabel>
           <input type="datetime-local"
             onChange={(event) => this.setState({date: event.target.value})}
             ></input>
+        </FormGroup>
+        <FormGroup>
+          <ControlLabel>Time End</ControlLabel>
+          <input type="time"
+            onChange={(event) => this.setState({endTime: event.target.value})}
+            >
+          </input>
         </FormGroup>
         <Button type="button" className="btn-success" onClick={() => this.addEvent()}>Submit</Button>
         <ListGroup>

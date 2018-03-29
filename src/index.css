@@ -1,2 +1,76 @@
-.Announcements {
+.Announcements > h2 {
+  text-align: left;
 }
+
+.Schedule > h2 {
+  text-align: right;
+}
+
+.Hackers {
+  background: #db7464;
+  background: -webkit-linear-gradient(top, #db7464 0%, #892a2a 36%, #350000 72%, #0f0000 100%);
+  background: linear-gradient(to bottom, #db7464 0%, #892a2a 36%, #350000 72%, #0f0000 100%);
+  width: 100%;
+  height: 100%;
+  min-height: 1200px;
+}
+
+.hackers-nav {
+  background: none;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.navbar-title {
+  color: white !important;
+}
+
+.navbar-item {
+  color: white !important;
+}
+
+.event-item {
+  text-align: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  display: inline-block;
+}
+
+.schedule-row {
+    display:flex;
+    justify-content:center;
+    align-items: flex-start;
+    width: 100%;
+    padding:50px;
+    color:#333;
+    flex-wrap:wrap;
+ }
+ .schedule-col {
+  /*
+  text-align: left !important;
+  list-style-position: inside;
+  list-style-type: none;
+  max-width: 500px;
+  line-height: 1.6;
+  */
+  list-style-type: none;
+ }
+ .schedule-col li {
+    margin-bottom: 12px;
+ }
+ .schedule-head {
+    font-weight: bold;
+    margin-bottom: 17px !important;
+    text-align: center;
+ }
+ /*Ignore this in app*/
+ .schedule-col.first{
+    margin-left:-110px;
+ }
+ @media(max-width:780px){
+    .schedule-col{
+       margin-left:-60px !important;
+    }
+ }

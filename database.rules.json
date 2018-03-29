@@ -10,7 +10,10 @@
     },
     "mentoring": {
       ".read": true,
-      ".write": "!newData.exists() || (auth != null && (auth.uuid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2' || auth.uuid === 'IJjBkYmzu1ZYe4uXJjxFzkeZP2x2'))"
+			"$id": {
+        ".read": true,
+      	".write": "!newData.exists() || !data.exists() || (auth != null && (auth.uuid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2' || auth.uid === 'IJjBkYmzu1ZYe4uXJjxFzkeZP2x2'))"
+      }
     }
   }
 }

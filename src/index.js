@@ -7,10 +7,12 @@ import { Router, Route, browserHistory } from 'react-router';
 
 import Admin from './components/Admin';
 import Mentor from './components/Mentor';
+import Hackers from './components/hackers/Hackers';
 
 ReactDOM.render(
-  <Router path="/" history={browserHistory}>
-    <Route path="/admin" component={Admin} />
-    <Route path="/mentor" component={Mentor} />
+  <Router path={`${process.env.PUBLIC_URL}/`} history={browserHistory}>
+    <Route path={`${process.env.PUBLIC_URL}/admin`} component={Admin} />
+    <Route path={`${process.env.PUBLIC_URL}/mentor`}component={Mentor} />
+    <Route path={`${process.env.PUBLIC_URL}/test`} component={Hackers} />
   </Router>, document.getElementById('root')
 )

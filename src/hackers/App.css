@@ -1,0 +1,22 @@
+/* Hackers Page designed by David Voicu */
+
+.App{
+    background: #db7464;
+    background: -webkit-linear-gradient(top, #db7464 0%, #892a2a 36%, #350000 72%, #0f0000 100%);
+    background: linear-gradient(to bottom, #db7464 0%, #892a2a 36%, #350000 72%, #0f0000 100%);
+    width: 100%;
+    height: 100%;
+    min-height: 1200px;
+}
+
+.Navbar{
+
+}
+
+.Schedule {
+
+}
+
+.Announcements {
+
+}
