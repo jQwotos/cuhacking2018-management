@@ -139,7 +139,7 @@ class Hackers extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem eventKey={0} href="https://drive.google.com/file/d/1ZJhNP5gQ9pvdXvHtzdCh2rgHxrorntoL/view?usp=sharing" class="navbar-item">
+              <NavItem eventKey={0} href="http://cuhacking2018file.singlehtml.com/" class="navbar-item">
                 *updated* Hacker Guide
               </NavItem>
               <NavItem eventKey={1} href="#" onClick={() => this.openMentorHelp()} class="navbar-item">
