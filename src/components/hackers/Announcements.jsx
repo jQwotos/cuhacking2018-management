@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
-import { Navbar, Grid, ListGroup, Col, ListGroupItem } from 'react-bootstrap';
+import { Navbar, Grid, ListGroup, Col, ListGroupItem, Row } from 'react-bootstrap';
 
+import Spots from './Spots';
 import { db } from '../../fire';
 
 class Announcements extends Component {
@@ -48,6 +49,7 @@ class Announcements extends Component {
             })
           }
         </ListGroup>
+        <Spots />
       </Col>
     )
   }

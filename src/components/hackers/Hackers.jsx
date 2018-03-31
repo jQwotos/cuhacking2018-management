@@ -135,19 +135,18 @@ class Hackers extends Component {
             <Navbar.Brand className="navbar-title">
               <a href="#">CUHacking LIVE</a>
             </Navbar.Brand>
+            <Navbar.Toggle />
           </Navbar.Header>
-          <Nav pullRight>
-            <NavItem eventKey={2} href="https://drive.google.com/file/d/1xs7imIUCJoKelhfm7jUHDl992LD9fioz/view?usp=sharing">
-              <Button href="https://drive.google.com/file/d/1xs7imIUCJoKelhfm7jUHDl992LD9fioz/view?usp=sharing">
-                Hacker Guide
-              </Button>
-            </NavItem>
-            <NavItem eventKey={1} href="#">
-              <Button onClick={() => this.openMentorHelp()}>
-                Request Help
-              </Button>
-            </NavItem>
-          </Nav>
+          <Navbar.Collapse>
+            <Nav pullRight>
+              <NavItem eventKey={0} href="https://drive.google.com/file/d/1ZJhNP5gQ9pvdXvHtzdCh2rgHxrorntoL/view?usp=sharing" class="navbar-item">
+                *updated* Hacker Guide
+              </NavItem>
+              <NavItem eventKey={1} href="#" onClick={() => this.openMentorHelp()} class="navbar-item">
+                Request Mentor
+              </NavItem>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
         <Grid>
           <Row>

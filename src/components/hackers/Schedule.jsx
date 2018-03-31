@@ -136,6 +136,9 @@ class Schedule extends Component {
               </ul>
           </Col>
         </Row>
+        <Row>
+          <p className="event-item">All workshops will be held in RC 214.</p>
+        </Row>
       </Col>
     )
   }
