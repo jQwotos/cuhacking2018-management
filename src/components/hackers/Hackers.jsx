@@ -121,6 +121,8 @@ class Hackers extends Component {
         name: this.state.person_name,
         timestamp: Date.now()
       });
+      this.closeMentorHelp();
+      alert("Request Submitted!");
     }
   }
 
@@ -135,6 +137,11 @@ class Hackers extends Component {
             </Navbar.Brand>
           </Navbar.Header>
           <Nav pullRight>
+            <NavItem eventKey={2} href="https://drive.google.com/file/d/1xs7imIUCJoKelhfm7jUHDl992LD9fioz/view?usp=sharing">
+              <Button href="https://drive.google.com/file/d/1xs7imIUCJoKelhfm7jUHDl992LD9fioz/view?usp=sharing">
+                Hacker Guide
+              </Button>
+            </NavItem>
             <NavItem eventKey={1} href="#">
               <Button onClick={() => this.openMentorHelp()}>
                 Request Help

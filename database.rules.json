@@ -2,17 +2,17 @@
   "rules": {
     "announcements": {
       ".read": true,
-      ".write": "auth != null && auth.uid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2'",
+      ".write": "auth != null && (auth.uid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2' || auth.uid ==='mNjZ1d6Qp5PCGAVRR2jWtnBEP6U2' || auth.uid === 'GF13iTUTIPUMIs6fjrL1oluQPOe2')",
     },
     "schedule": {
       ".read": true,
-      ".write": "auth != null && auth.uid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2'",
+      ".write": "auth != null && (auth.uid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2' || auth.uid ==='mNjZ1d6Qp5PCGAVRR2jWtnBEP6U2')",
     },
     "mentoring": {
       ".read": true,
 			"$id": {
         ".read": true,
-      	".write": "!newData.exists() || !data.exists() || (auth != null && (auth.uuid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2' || auth.uid === 'IJjBkYmzu1ZYe4uXJjxFzkeZP2x2'))"
+      	".write": "!newData.exists() || !data.exists() || (auth != null && (auth.uuid === 'blQA5sxpqqNbCUlhTY8Tn3MUQFd2' || auth.uid === 'IJjBkYmzu1ZYe4uXJjxFzkeZP2x2' || auth.uid === 'mNjZ1d6Qp5PCGAVRR2jWtnBEP6U2' || auth.uid === 'GF13iTUTIPUMIs6fjrL1oluQPOe2'))"
       }
     }
   }

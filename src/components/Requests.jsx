@@ -48,8 +48,9 @@ class Requests extends Component {
             return (
               <ListGroupItem key={ request.id }>
                 <ListGroupItem header={ request.text.location }>
-                  <p>{ request.text.problem_descriotin }</p>
+                  <p>{ request.text.problem_description }</p>
                   { request.text.name }
+
                   <a className="pull-right" onClick={() => this.markDone(request.id)}>&#10004;</a>
                 </ListGroupItem>
               </ListGroupItem>

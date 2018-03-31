@@ -13,6 +13,6 @@ ReactDOM.render(
   <Router path={`${process.env.PUBLIC_URL}/`} history={browserHistory}>
     <Route path={`${process.env.PUBLIC_URL}/admin`} component={Admin} />
     <Route path={`${process.env.PUBLIC_URL}/mentor`}component={Mentor} />
-    <Route path={`${process.env.PUBLIC_URL}/test`} component={Hackers} />
+    <Route path={`${process.env.PUBLIC_URL}/`} component={Hackers} />
   </Router>, document.getElementById('root')
 )
