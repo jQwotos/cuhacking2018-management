@@ -42,7 +42,7 @@ class Announcements extends Component {
           {
             this.state.announcements.map(announcement => {
               return (
-                <ListGroupItem header={ announcement.text.text }>
+                <ListGroupItem header={ announcement.text.text } href={ announcement.text.href }>
                   { announcement.text.date }
                 </ListGroupItem>
               )
